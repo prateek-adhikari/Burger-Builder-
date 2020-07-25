@@ -8,6 +8,7 @@ from './burgerBuilder';
 export {
     purchaseBurgerStart,
     purchaseBurger,
-    purchaseInit
+    purchaseInit,
+    fetchOrders
 }
 from './order';
