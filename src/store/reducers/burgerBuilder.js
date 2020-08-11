@@ -3,16 +3,16 @@ import { updateObject } from '../../shared/utility';
 
 const initialState = {
     ingredients: null,
-    totalPrice: 4,
+    totalPrice: 50,
     error: false,
     building: false
 }
 
 const INGREDIENT_PRICES = {
-    salad: 0.5,
-    cheese: 0.4,
-    bacon: 0.7,
-    meat: 1
+    veg: 50,
+    cheese: 25,
+    chicken: 75,
+    egg: 60
 }
 
 const addIngredient = (state, action) => {
@@ -44,12 +44,12 @@ const removeIngredient = (state, action) => {
 const setIngredients = (state, action) => {
     return updateObject(state, {
         ingredients: {
-            salad: action.ingredients.salad,
-            bacon: action.ingredients.bacon,
+            veg: action.ingredients.veg,
+            chicken: action.ingredients.chicken,
             cheese: action.ingredients.cheese,
-            meat: action.ingredients.meat,
+            egg: action.ingredients.egg,
         },
-        totalPrice: 4,
+        totalPrice: 50,
         error: false,
         building: false
     })
