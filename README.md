@@ -11,3 +11,5 @@
 => Added authentication system to provide signup, login & logout functionality. 
 
 => Orders section for checking the orders you placed.
+
+=> Checkout the project at https://burger-45a7b.web.app/
